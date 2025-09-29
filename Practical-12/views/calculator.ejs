@@ -52,6 +52,9 @@
       font-size: 1.2rem;
       color: #333;
     }
+    .hidden {
+      display: none;
+    }
   </style>
   <div class="calculator-container">
     <h1><%= title %></h1>
@@ -69,7 +72,7 @@
         <button type="reset" onclick="document.getElementById('resultBox').style.display='none';">Reset</button>
       </div>
     </form>
-    <div id="resultBox" class="result" style="<% if (typeof result === 'undefined') { %>display:none;<% } %>">
+  <div id="resultBox" class="result<%= typeof result === 'undefined' ? ' hidden' : '' %>">
       <% if (typeof result !== 'undefined') { %>
         Result: <%= result %>
       <% } %>
