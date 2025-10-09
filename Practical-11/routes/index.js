@@ -9,4 +9,5 @@ router.get('/', function(req, res, next) {
 router.get('/home', function(req, res, next) {
   res.render('dashboard', { title: 'Dashboard' });
 });
+r
 module.exports = router;

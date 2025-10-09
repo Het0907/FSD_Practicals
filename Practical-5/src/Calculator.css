@@ -1,0 +1,149 @@
+
+.calculator {
+  max-width: 340px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding: 18px 12px 24px 12px;
+  border: 1.5px solid #333;
+}
+
+.calculator-display {
+  background: linear-gradient(90deg, #232526 60%, #2c2c2e 100%);
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 400;
+  text-align: right;
+  padding: 32px 24px 18px 24px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 18px 18px 8px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.display-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.calculator-keypad {
+  padding: 0 2px;
+}
+
+.row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  border: none;
+  border-radius: 14px;
+  font-size: 1.45rem;
+  font-weight: 400;
+  height: 56px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(.4,0,.2,1);
+  flex: 1;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #39393b;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+button:active {
+  transform: scale(0.97);
+  filter: brightness(0.95);
+}
+
+/* Number keys */
+.key-number {
+  background: linear-gradient(135deg, #48484a 60%, #39393b 100%);
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.key-number:hover {
+  background: linear-gradient(135deg, #5a5a5c 60%, #39393b 100%);
+  color: #fff;
+}
+
+/* Operator keys - pink/magenta color */
+.key-operator {
+  background: linear-gradient(135deg, #e91e63 60%, #c2185b 100%);
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #b71c50;
+}
+
+.key-operator:hover {
+  background: linear-gradient(135deg, #f06292 60%, #e91e63 100%);
+}
+
+/* Delete key - pink/magenta color */
+.key-delete {
+  background: linear-gradient(135deg, #e91e63 60%, #c2185b 100%);
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #b71c50;
+}
+
+.key-delete:hover {
+  background: linear-gradient(135deg, #f06292 60%, #e91e63 100%);
+}
+
+/* AC key - blue color */
+.key-ac {
+  background: linear-gradient(135deg, #2196f3 60%, #1976d2 100%);
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #1565c0;
+}
+
+.key-ac:hover {
+  background: linear-gradient(135deg, #42a5f5 60%, #2196f3 100%);
+}
+
+/* Equals key */
+.key-equals {
+  background: linear-gradient(135deg, #48484a 60%, #39393b 100%);
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #444;
+}
+
+.key-equals:hover {
+  background: linear-gradient(135deg, #5a5a5c 60%, #39393b 100%);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .calculator {
+    max-width: 98vw;
+    margin: 0 auto;
+    padding: 8px 2px 16px 2px;
+  }
+  button {
+    height: 44px;
+    font-size: 1.1rem;
+  }
+  .calculator-display {
+    font-size: 1.5rem;
+    padding: 18px 8px 10px 8px;
+  }
+}

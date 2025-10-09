@@ -7,6 +7,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/home', function(req,res,next){
-  res.render('home', { title: 'Welcome to our site' });
+  res.render('home', { title: 'Practical-9' });
 })
 module.exports = router;
